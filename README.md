@@ -21,14 +21,14 @@ This project evaluates a set of classical machine learning classifiers against d
 - Logistic Regression had both the lowest accuracy at 93.13% and the highest false-positive count at 33,054 of the four models, making it the least reliable at avoiding false alarms.
 - An earlier experiment training on a single day's data and testing on the other nine failed badly, with test accuracy ranging from 30% to 80%, because each day's file covered different attack types. This is what led to the final approach of merging and class-balancing all 10 days into a single dataset before training, which produced the results above.
 ## Repo contents
-- `MSc Project Code - A Comparative Study on Machine Learning and Deep Learning Approaches for Cybersecurity Intrusion Detection System.ipynb` — full implementation and experiments
-- `Dissertation Research Paper (MSc Project) - A Comparative Study for Machine Learning and Deep Learning Approaches for Cybersecurity Intrusion Detection System.docx` — full written dissertation with literature review and detailed methodology
-> Note: this repo contains the dissertation code and research paper as submitted for an MSc — it's a research comparison, not a deployable system.
+- `MSc Project Code - A Comparative Study on Machine Learning and Deep Learning Approaches for Cybersecurity Intrusion Detection System.ipynb`: full implementation and experiments
+- `Dissertation Research Paper (MSc Project) - A Comparative Study for Machine Learning and Deep Learning Approaches for Cybersecurity Intrusion Detection System.docx`: full written dissertation with literature review and detailed methodology
+> Note: this repo contains the dissertation code and research paper as submitted for an MSc. It's a research comparison, not a deployable system.
 ## How to explore
-\`\`\`bash
+```bash
 git clone https://github.com/semilhalani/dissertation-MLvDL.git
 cd dissertation-MLvDL
 pip install -r requirements.txt
 jupyter notebook
-\`\`\`
+```
 For the full write-up (literature review, detailed methodology, discussion of results), see the dissertation document included in this repo.
