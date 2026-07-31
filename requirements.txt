@@ -1,0 +1,24 @@
+# ------------------------------------------------------------------
+# Requirements: Network Intrusion Detection — ML vs DL Comparative Study
+# Environment as of the original project (August 2022)
+# Recommended interpreter: Python 3.9 or 3.10
+# ------------------------------------------------------------------
+
+# --- Data handling -------------------------------------------------
+pandas==1.4.3
+numpy==1.23.1
+
+# --- Visualization ---------------------------------------------------
+matplotlib==3.5.2
+seaborn==0.11.2
+wordcloud==1.8.2.2
+
+# --- Classical machine learning --------------------------------------
+scikit-learn==1.1.2
+
+# --- Deep learning -----------------------------------------------------
+tensorflow==2.9.1
+keras==2.9.0
+
+# --- Notebook environment ------------------------------------------------
+notebook==6.4.12
