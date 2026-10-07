@@ -20,6 +20,13 @@ This project evaluates a set of classical machine learning classifiers against a
 - The linear-kernel SVM matched the Decision Tree's accuracy of 96.06% with an F1 score of 0.9579.
 - Logistic Regression had both the lowest accuracy at 93.13% and the highest false-positive count at 33,054 of the four models, making it the least reliable at avoiding false alarms.
 - An earlier experiment training on a single day's data and testing on the other nine failed badly, with test accuracy ranging from 30% to 80%, because each day's file covered different attack types. This is what led to the final approach of merging and class-balancing all 10 days into a single dataset before training, which produced the results above.
+## Scale and details
+- About 16.2 million raw network-flow records across 10 daily CSV files. One day's file alone held 7.9 million rows.
+- After cleaning and balancing, about 4.39 million records, split 60/20/20. The test set held 877,618 records.
+- Each file was cleaned separately with the same functions, because the full dataset was too heavy for the available GPU.
+- Training times: Logistic Regression 24 seconds, Decision Tree 51 seconds, the FFNN about 40 minutes and the SVC two to three hours.
+- Trained models were saved as a Keras H5 file and pickled scikit-learn models.
+- Supervised by Dr Mustafa Bozkurt at Queen Mary University of London.
 ## Repo contents
 - `MSc Project Code - A Comparative Study on Machine Learning and Deep Learning Approaches for Cybersecurity Intrusion Detection System.ipynb`: full implementation and experiments
 - `Dissertation Research Paper (MSc Project) - A Comparative Study for Machine Learning and Deep Learning Approaches for Cybersecurity Intrusion Detection System.pdf`: full written dissertation with literature review and detailed methodology
